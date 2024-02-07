@@ -36,8 +36,8 @@ The following image shows the default database structure and a recommended datab
 <tr class="even">
 <td><code>IDENTITY_DB</code></td>
 <td>
-<li>This contains identity-related data. For example, user sessions, OAuth 2.0, SAML 2.0, User Managed Access (UMA), etc.</li>
-<li>In the default database configuration, all the UMA, consent, and identity data are located  in the <code>IDENTITY_DB</code>. In a deployment, both identity and UMA can be configured in a single database while consent data is configured to a separate database `CONSENT_MGT`</li>.
+<li>This contains identity-related data. For example, user sessions, OAuth 2.0, SAML 2.0, etc.</li>
+<li>In the default database configuration, all the consent, and identity data are located  in the <code>IDENTITY_DB</code>. In a deployment, consent data is configured to a separate database `CONSENT_MGT`</li>.
 <!--<li>For more information, see <a href="{{base_path}}/deploy/work-with-databases">Working with Databases</a>.</li>-->
 </td>
 </tr>
@@ -63,8 +63,8 @@ During a deployment, user data can be configured to a different database, <code>
 <td><code>CONSENT_MGT</code></td>
 <td>
 <li>Used for data pertaining to user consents</li>
-<li>In the default database configuration, UMA, consent, and identity data are located <code>IDENTITY_DB</code>.
-In a deployment, both identity and UMA can be configured in a single database while consent data is configured to a separate database.</li>
+<li>In the default database configuration, consent, and identity data are located <code>IDENTITY_DB</code>.
+In a deployment, consent data is configured to a separate database.</li>
 <!-- TODO <li>For more information, see <a href="{{base_path}}/deploy/change-datasource-consent-management">Change the Default Datasource for Consent Management</a>.</li>-->
 </td>
 </tr>
