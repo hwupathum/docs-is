@@ -15,7 +15,8 @@ To adjust session management settings, follow these steps:
 2. Configure the **Idle Session Timeout** and **Remember Me Period** to suit your security policies.
 {% if product_name == "Asgardeo" or (product_name == "WSO2 Identity Server" and is_version > "7.2.0") %}
 3. To enforce an absolute session lifetime, select **Enable Maximum Session Timeout** and configure the **Maximum Session Timeout**.
-4. Click **Update** to save the changes.
+4. Enable **Skip terminating current session and token on password update** to preserve the current session when users update their password.
+5. Click **Update** to save the changes.
 {% else %}
 3. Click **Update** to save the changes.
 {% endif %}
